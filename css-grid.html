@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .grid-container {
+      display: grid;
+      /* Columns ---> width values */
+      grid-template-columns: 100px 200px 100px;
+      /* 100px 100px 100px 100px */
+      /* row height values */
+      grid-template-rows: 100px 100px 100px;
+      /* both row and column gaps */
+      gap: 10px 30px;
+      /* Sperate values */
+      row-gap: 10px;
+      column-gap: 30px;
+
+    }
+
+    .grid-item {
+      height: 100px;
+      width: 100px;
+      background-color: aqua;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 36px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item" style="width: 200px;">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+  </div>
+</body>
+
+</html>
